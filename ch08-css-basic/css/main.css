@@ -8,3 +8,4 @@ p.a.b{color: gold;background-color: #000;}
 div h2{background-color: gray;}
 .box h2{background-color: gray;}
 div.box h2{background-color: gray;}
+div.box>h2{background-color: gray;}
