@@ -1,0 +1,42 @@
+/* @font-face {
+    font-family: "케듀";
+    src: url(../font/KERISKEDU_R.otf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "케듀";
+    src: url(../font/KERISKEDU_B.otf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: "케듀테두리";
+    src: url(../font/KERISKEDU_Line.otf);
+} */
+.kedu{
+    font-family: "케듀";
+    font-weight: 700;
+}
+.kedu2{
+    font-family: "케듀테두리";
+}
+
+/* font-family 등록명은 임의로 입력할 수 있지만 한글은 반드시 ""를 사용해야 한다. */
+
+
+/* @font-face {
+    font-family: 'NostalgicYuriDakku';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-1@1.0/Griun_YuriDaggu-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+} */
+.dakku{
+    font-family: 'NostalgicYuriDakku';
+}
+.mons{
+    font-family: "Monsieur La Doulaise", cursive;
+}
+.b{
+    font-family: "Henny Penny", system-ui;
+}
+
+/* 웹폰트 방법이 편리성은 높지만 웹서버에 저장되어 있던 폰트파일이 삭제되거나 중국처럼 나라에서 도메인을 차단하거나 하는 리스크가 있다. */

@@ -1,0 +1,71 @@
+html{
+    font-size: 30px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+}
+.box{
+    font-size: 50px;
+}
+.box h1{font-size: 2em;}
+.box h2{font-size: 2rem;}
+.ex1{
+    font-weight: 600;
+}
+/* 기본값은 400 */
+.ex2{
+    line-height: 1.2;
+}
+/* 기본값은 1.2 */
+.ex3{
+    font-style: italic;
+}
+address{
+    font-style: normal;
+}
+.ex4{
+    letter-spacing: 50px;
+}
+.ex5{
+    word-spacing: 50px;
+}
+.ex6{
+    /* white-space: nowrap; */
+    /* white-space: pre; */
+    white-space: pre-wrap;
+}
+.ex7{
+    text-indent: 100px;
+}
+.ex8{
+    text-decoration: underline;
+    text-decoration: line-through;
+}
+a{
+    /* text-decoration: none; */
+    text-decoration: initial;
+}
+/* initial = 기본설정값 초기화 */
+.ex9{
+    border: 1px solid red;
+    text-align: justify;
+    width: 600px;
+    word-break: break-all;
+    /* word-break: keep-all; */
+}
+/* 기본값은 left */
+/* text-align: center -> 컨텐트박스 안에서의 문단 정렬이기 때문에 화면 가운데에 정렬시키려면 margin:auto를 해줘야 함 */
+/* word-break: break-all은 글자 깨지도록 하는 것, keep-all은 원래 상태 유지하는 것 */
+.ex10{
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+}
+.ex11{
+    font-size: 40px;
+}
+.ex11 b{
+    font-size: 0.5em;
+    vertical-align: top;
+}
+/* vertical-align: baseline가 가본값이다. */
