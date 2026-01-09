@@ -13,7 +13,7 @@
     src: url(../font/KERISKEDU_Line.otf);
 } */
 .kedu{
-    font-family: "케듀";
+    font-family: "케듀",sans-serif;
     font-weight: 700;
 }
 .kedu2{
