@@ -1,0 +1,69 @@
+.a{
+    border: 1px solid red;
+    padding: 30px;
+    background-color: aquamarine;
+    background-image: url(../img/puppy.jpg);
+    /* url속성의 경로는 쌍따옴표 표기해도 되고 안 해도 됨 */
+    /* css에 넣은 이미지는 스타일이지 컨텐트박스에 들어가는 콘텐츠가 아니기 때문에 컨텐트박스 크기에 영향을 주지 않는다. */
+    width: calc(700px + 100px);
+    height: calc(80px*10);
+
+    /* background-repeat: repeat-x;
+    background-repeat: repeat-y; */
+    background-repeat: no-repeat;
+    /* background-repeat속성값이 repeat로 설정되어있는 것이 기본값인데 이렇게 되어 있으면 이미지가 반복되어 나타남*/
+    /* 포토샵의 레이어처럼 배경색 -> 이미지 -> 텍스트 순서대로 쌓이게 된다. */
+    
+    /* background-position: -100px -200px; */
+    /* background-position: 100% 100%; */
+    /* background-position: calc(100% - 100px) 100%; */
+    /* background-position의 기본값은 0px 0px 이다. (x축, y축의 값을 축약형으로 쓴 것임) */
+    /* 태그의 좌상단 꼭짓점의 좌표가 x=0, y=0 이라고 생각하면 된다. */
+    /* 오른쪽 혹은 아래쪽으로 갈수록 양수값, 왼쪽 혹은 위쪽으로 갈수록 음수값*/
+    /* calc속성을 쓸 때는 반드시 단위가 있어야 하며, 중간의 부호(+,-,*,/) 중 -는 띄어쓰기를 해줘야 한다. */
+
+    /* background-size: auto auto; */
+    /* background-size: auto 400px; */
+    /* background-size: auto 100%; */
+    /* background-size: calc(100% - 100px) auto; */
+    /* background-size의 기본값은 auto auto로, 다운받은 이미지 사이즈로 보여진다. */        
+    /* background-size: auto 500px; -> 세로 500px로 지정하고 가로는 그에 맞게 자동으로 설정한다는 의미 */
+    /* background-size: auto 100%; -> 태그의 높이만큼 100%로 계산하고 가로는 그에 맞게 자동으로 설정한다는 의미*/
+
+    /* background-size: cover; */
+    background-size: contain;
+}
+
+.b{
+    border: 1px solid blue;
+    height: 800px;
+    background: aquamarine url(../img/puppy.jpg) no-repeat 50% 50% / contain;
+    /* 순서 무조건 외우세요. */
+    /* 배경색이 없는 디자인이라고 하면 맨 앞에 배경색을 안쓰면 됨 */
+    background-attachment: fixed;
+}
+
+.c{
+    border: 1px solid green;
+    height: 800px;
+    background: lime url(../img/puppy.jpg) no-repeat 50% 50% / contain;
+    background-blend-mode: multiply;
+}
+
+.d{
+    border: 1px solid coral;
+    height: 800px;
+    background: 
+    url(../img/puppy.jpg) no-repeat 0% 50% / auto auto,
+    url(../img/puppy.jpg) no-repeat 50% 50% / contain,
+    url(../img/puppy.jpg) no-repeat 100% 50% / auto 100px;
+    /* 가장 아래 쓴 배경이 홈페이지에서도 가장 아래쪽에 깔린다. */
+}
+
+.e{
+    border: 1px solid orange;
+    height: 800px;
+    background: linear-gradient(30deg,red 20%,blue,green 80%);
+    /* 그라디언트는 효과가 아니라 이미지임 */
+    /* 각도deg, 색상1 0%, 색상2 50%, 색상3 100% */
+}
