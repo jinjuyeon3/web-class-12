@@ -1,0 +1,131 @@
+*{margin: 0; padding: 0;}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "풀무원";
+    src: url(../font/PulmuoneLOHASBold.woff);
+}
+.pul{
+    font-family: "풀무원";
+}
+/* 클래스명을 먼저 정한 다음 해당 폰트가 쓰일 태그에 클래스명만 붙여주면 됨 */
+html{
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.banner{
+    height: 250px;
+    background: url(../img/sub_vis01_02.jpg) no-repeat 50% 50% / cover;
+    margin-bottom: 50px;
+}
+/* 이미지태그로 넣는 것은 콘텐츠로 넣는다는 의미이므로 alt속성을 써서 웹접근성을 높일 수 있지만
+background로 넣으면 스타일만 들어가는거라 웹접근성을 높일 수는 없지만 텍스트같은 콘텐츠를 넣고 스타일을 적용할 때 편함 */
+/* 디자인시안에서 너비가 1920px이라고 되어있을 때 width를 1920px로 설정하면 안됨 1920px로 설정하면 그보다 큰 모니터에서는 이미지가 꽉차게 안보임 */
+/* margin을 줄 때는 형제태그끼리 밀어내도록 해야 나중에 꼬이지 않는다. */
+main{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 너비가 1200px로 정해져있는데 내가 했던 것처럼 좌우 margin을 360px씩 주면 안됨
+디자인시안에서 확실하게 1200px로 정해져있고 화면 너비가 1920px이상인 모니터들도 있기 때문에 좌우여백을 주는 방식으로 해버리면 디자인시안과 다르게 컨텐트박스 영역이 1200px이 넘어가니까 안됨*/
+main h1{
+    margin-bottom: 100px;
+    font-weight: 400;
+    font-size: 30px;
+    background: url(../img/sub_tit_line.gif) repeat-x 0 50%;
+}
+/* h1, h2태그는 이렇게 단독으로 선택하지말고 항상 부모태그와 함께 선택해줘야 좋음 */
+/* h1태그 기본설정값으로 굵기 bold로 설정되어 있어서 html에 400이라고 굵기를 설정해뒀어도 상속되지 않기 때문에 별도로 굵기를 지정해줘야 함 */
+main h1 span{
+    background-color: white;
+    padding-right: 20px;
+}
+/* 라인이미지를 h1태그 컨텐트박스 전체에 가로반복으로 중앙에 깔고 그 위에 span태그로 묶은 글자 영역에만 배경색을 흰색으로 채운 것임 */
+main h2{
+    font-size: 50px;
+    text-align: center;
+    padding: 0 70px;
+    margin-bottom: 50px;
+}
+main h2 em{
+    font-style: normal;
+    color: #7EAE78;
+}
+.content{
+    width: 810px;
+    box-sizing: border-box;
+    padding: 40px 90px 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+.content h3{
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+/* .content p:nth-of-type(1){} */
+.content h3+p{
+    margin-bottom: 30px;
+}

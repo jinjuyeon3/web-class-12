@@ -1,0 +1,54 @@
+*{margin: 0px; padding: 0px;}
+
+@font-face {
+    font-family: "풀무원";
+    src: url(../font/PulmuoneLOHASBold.woff);
+}
+
+@font-face {
+    font-family: pretendard;
+    src: url(../font/Pretendard-Regular.otf);
+}
+
+.wrap{
+    font-family: pretendard;
+}
+.banner{
+    height: 250px;
+    background: url(../img/sub_vis01_02.jpg) no-repeat 50% 50% / cover;
+}
+.content-all{
+     margin: 50px 360px 0px;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    margin: 100px 70px 50px;
+    font-size: 52px;
+    text-align: center;
+    font-family: "풀무원";
+    line-height: 1.6;
+}
+h2 strong{
+    font-style: normal;
+    color: #7EAE78;
+}
+.content-main{
+    margin: 0px 200px;
+    padding: 40px 90px 50px;
+    text-align: center;
+    background-color: #F4F4F4;
+}
+.title{
+    margin-bottom: 25px;
+    font-size: 35px;
+    font-family: "풀무원";
+}
+.content-1{
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+.content-2{
+    line-height: 1.6;
+}
