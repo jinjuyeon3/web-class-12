@@ -82,7 +82,7 @@ html{
     margin-bottom: 50px;
 }
 /* 이미지태그로 넣는 것은 콘텐츠로 넣는다는 의미이므로 alt속성을 써서 웹접근성을 높일 수 있지만
-background로 넣으면 스타일만 들어가는거라 웹접근성을 높일 수는 없지만 텍스트같은 콘텐츠를 넣고 스타일을 적용할 때 편함 */
+background로 넣으면 스타일만 들어가는거라 웹접근성을 높일 수는 없다 하지만 텍스트같은 콘텐츠를 넣고 스타일을 적용할 때 편함 */
 /* 디자인시안에서 너비가 1920px이라고 되어있을 때 width를 1920px로 설정하면 안됨 1920px로 설정하면 그보다 큰 모니터에서는 이미지가 꽉차게 안보임 */
 /* margin을 줄 때는 형제태그끼리 밀어내도록 해야 나중에 꼬이지 않는다. */
 main{
@@ -126,7 +126,7 @@ main h2 em{
     font-size: 35px;
     margin-bottom: 25px;
 }
-/* .content p:nth-of-type(1){} */
+/* .content p:nth-of-type(1){margin-bottom: 30px;} */
 .content h3+p{
     margin-bottom: 30px;
 }
