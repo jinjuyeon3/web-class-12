@@ -1,0 +1,48 @@
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Aboreto", system-ui;
+}
+.banner{
+    background: url(../img/banner.png) no-repeat 50% 50% / cover;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: white;
+    line-height: 100%;
+    padding-top: 270px;
+    padding-bottom: 271px;
+    margin-bottom: 6rem;
+}
+.contents{
+    width: 1600px;
+    margin: 0 auto;
+}
+.contents h1{
+    font-size: 4rem;
+    line-height: 90%;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+}
+.content-1{
+    font-family: 'Pretendard';
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 140%;
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+}
+.contents img{
+    width: 1000px;
+    height: 430px;
+    margin-bottom: 1rem;
+}
+.content-2{
+    font-family: 'Pretendard';
+    text-transform: lowercase;
+    line-height: 140%;
+}
+.content-2 em{
+    font-style: normal;
+    font-weight: 800;
+}

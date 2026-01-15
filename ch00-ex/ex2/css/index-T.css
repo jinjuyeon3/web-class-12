@@ -1,0 +1,62 @@
+.aboreto {
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+/* aboreto라는 클래스명을 가진 태그들은 적용되는 거니까 이 클래명을 태그에 붙여주면 됨 */
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Pretendard',sans-serif;
+}
+.banner{
+    height: 599px;
+    background: url(../img/banner.png) no-repeat 50% 50% / cover;
+    /* padding-top: 270px;
+    box-sizing: border-box; */
+    margin-bottom: 120px;
+}
+.banner h1{
+    color: white;
+    font-size: 2.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 270px;
+    /* margin-top을 주면 안됨, 부모태그인 banner에 padding도 없고 border도 없으니 막히는 게 없어서 밀어낼 여백이 아무 것도 없어서 h1태크의 텍스트가 중앙 정렬 안되고 위로 올라감 그래서 나온 암묵적인 약속이 생김 */
+    /* [중요!] 첫 번째 자식태그한테는 margin-top을 적용하지 마세요. */
+    /* [중요!] 마지막 자식태그한테는 martgin-bottom을 적용하지 마세요. */
+}
+.content{
+    width: 1600px;
+    margin: 0 auto;
+}
+.content h2{
+    font-size: 4rem;
+    line-height: 90%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+.content p{
+    border-top: 1px solid black;
+    line-height: 140%;
+    text-align: right;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+}
+/* .content figure{
+    border: 1px solid green;
+} */
+.content figure img{
+    width: 1000px;
+    height: 430px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.content figcaption{
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-transform: lowercase;
+}
