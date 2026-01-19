@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrap{
+    background-color: gray;
+    width: 800px;
+    height: 100px;
+    display: flex;
+}
+.wrap div{
+    width: 100px;
+    padding: 10px;
+    box-sizing: border-box;   
+}
+.wrap .a{
+    background-color: red;
+    order: 2;
+}
+.wrap .b{
+    background-color: green;  
+    order: 4;
+}
+.wrap .c{
+    background-color: blue;
+    order: 1;
+}
+.wrap .d{
+    background-color: gold;
+    order: 5;
+}
+.wrap .e{
+    background-color: pink;
+    order: 3;
+}

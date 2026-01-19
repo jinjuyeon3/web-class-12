@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    border: 10px solid red;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    /* flex-direction: row; (좌->우 : 기본값) */
+    /* flex-direction: row-reverse; (우->좌)*/
+    /* flex-direction: column; (상->하)*/
+    /* flex-direction: column-reverse; (하->상) */
+    /* align-items: stretch; (기본값)*/
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* justify-content: flex-start; (기본값) */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* gap: 20px; */
+}
+.box section{
+    border: 1px solid blue;
+}
+/* 무조건 부모태그에 flex를 줘야(flex-container) 자식태그들이 나란히 배치됨(flex-item) */
+/* flex-container에 지정하는 속성과 flex-item에 지정하는 속성이 다르므로 주의*/
+/* 메인축(기본값: 좌->우)과, 메인축을 기준 수직 방향으로 교차축(기본값: 상->하)이 생겨나는데, flex-item들은 무조건 메인축을 기준으로 나란히 배치된다. */
+/* 교차축을 변경하는 속성은 없음. 메인축을 바꾸면 교차축도 자동으로 바뀜. */
+/* flex-item들은 부모태그 너비를 상속받지 않고 인라인블록태그처럼 포함하는 콘텐츠만큼의 너비를 갖게된다. */
+/* flex-item들은 교차축 길이만큼 늘어난다. */
+/* flex-start(축의 시작점) / flex-end(축의 끝점) / center(축의 중간점) 개념이 존재함. */
