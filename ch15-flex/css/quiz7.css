@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    background-color: gray;
+    width: 800px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+.box div{
+    width: 100px;
+    height: 100px;
+    /* padding: 10px;
+    box-sizing: border-box; */
+}
+
+
+
+div .a{
+    background-color: red;
+}
+div .b{
+    background-color: green;  
+}
+div .c{
+    background-color: blue;
+}
+div .d{
+    background-color: gold;
+}
+div .e{
+    background-color: pink;
+}
