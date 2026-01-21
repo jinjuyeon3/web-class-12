@@ -9,16 +9,12 @@
     height: 300px;
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
 }
 
 .box div{
     width: 100px;
     height: 100px;
-    /* padding: 10px;
-    box-sizing: border-box; */
 }
-
 
 
 div .a{
