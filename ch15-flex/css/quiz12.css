@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    background-color: gray;
+    width: 800px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 아이템이 하나밖에 없어도 중앙에 정렬할 때에도 flex를 많이 쓴다. */
+.box-1{
+    width: 400px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-1 div{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+div .a{
+    background-color: red;
+}
+div .b{
+    background-color: green;  
+}
+div .c{
+    background-color: blue;
+}
+div .d{
+    background-color: gold;
+}
+div .e{
+    background-color: pink;
+}
+

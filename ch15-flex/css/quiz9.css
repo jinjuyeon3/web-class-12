@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    background-color: gray;
+    width: 800px;
+    height: 300px;
+    display: flex;
+}
+
+.box .box-1{
+    display: flex;
+    width: 500px;
+}
+
+.box .box-1 div{
+    /* width: 250px; */
+    flex: 1;
+}
+
+/* .box .box-2{
+    display: flex;
+    flex-direction: column;
+} */
+
+.box .box-2 div{
+    width: 300px;
+    height: 100px;
+}
+
+
+div .a{
+    background-color: red;
+}
+div .b{
+    background-color: green;  
+}
+div .c{
+    background-color: blue;
+}
+div .d{
+    background-color: gold;
+}
+div .e{
+    background-color: pink;
+}

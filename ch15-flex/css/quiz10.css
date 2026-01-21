@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    background-color: gray;
+    width: 800px;
+    height: 300px;
+    display: flex;
+}
+
+.box-1{
+    width: 250px;
+}
+.box-2{
+    width: 300px;
+}
+.box-3{
+    width: 250px;
+}
+
+.box-2 .c{
+    height: 100px;
+}
+.box-2-1{
+    display: flex;
+}
+.box-2-1 div{
+    width: 150px;
+    height: 200px;
+}
+
+div .a{
+    background-color: red;
+}
+div .b{
+    background-color: green;  
+}
+div .c{
+    background-color: blue;
+}
+div .d{
+    background-color: gold;
+}
+div .e{
+    background-color: pink;
+}
