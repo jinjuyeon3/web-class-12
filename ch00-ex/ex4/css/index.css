@@ -1,0 +1,89 @@
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Pretendard',sans-serif;
+}
+.aboreto{
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+    background: url(../img/bg.png) repeat-y 50% 17%;
+}
+.container{
+    width: 1600px;
+    margin: 0 auto;
+}
+.banner{
+    height: 599px;
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+}
+.banner h1{
+    color: white;
+    font-size: 2.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.container h2{
+    font-size: 5rem;
+    line-height: 90%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin-bottom: 2.4rem;
+}
+.container h2+p{
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-bottom: 2.4rem;
+}
+.coffee-imgbox-1{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem; 
+}
+.coffee-imgbox-1 figure{
+    flex: 1;
+    aspect-ratio: 520/434;
+    line-height: 0%;
+}
+.coffee-imgbox-1 figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.container h3{
+    font-size: 2rem;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.container h3+p{
+    line-height: 140%;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+.coffee-imgbox-2{
+    display: flex;
+    gap: 1rem
+}
+.coffee-imgbox-2 figure{
+    flex: 1;
+    aspect-ratio: 790/434;
+    line-height: 0%;
+}
+.coffee-imgbox-2 figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}

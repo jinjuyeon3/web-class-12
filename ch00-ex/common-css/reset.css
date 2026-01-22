@@ -13,3 +13,9 @@ a{
 ul,ol{
     list-style: none;
 }
+em,address,i{
+    font-style: inherit;
+}
+strong,b{
+    font-weight: inherit;
+}

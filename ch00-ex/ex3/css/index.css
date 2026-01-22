@@ -11,14 +11,10 @@ html{
 body{
     background: url(../img/BACKGROUND.png) no-repeat 50% 50% / contain;
 }
-main{
-    width: 1600px;
-    margin: 0 auto;
-}
 .banner{
     height: 599px;
     border-radius: 0px 0px 150px 150px;
-    background: url(../img/banner.png) no-repeat 25% 75% / cover;
+    background: url(../img/banner.png) no-repeat 50% 75% / cover;
 }
 .banner h1{
     color: white;
@@ -28,14 +24,19 @@ main{
     text-align: center;
     padding-top: 270px;
 }
+main{
+    width: 1600px;
+    margin: 0 auto;
+}
 .title{
     text-align: center;
     text-transform: uppercase;
 }
 .title h2{
     height: 168px;
-    background: url(../img/Vector\ 1.svg) no-repeat 50% 50% / contain;
-}    
+    background: url(../img/deco.svg) no-repeat 50% 50% / contain;
+}
+/* 예제 디자인의 도트패턴은 body태그나 wrap에 배경으로 넣어주면 됨 */
 .title h3{
     font-size: 7.5rem;
     line-height: 90%;
