@@ -18,7 +18,7 @@ body{
 .banner{
     height: 599px;
     background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
-    border-radius: 50px;
+    border-radius: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@ body{
     text-transform: uppercase;
 }
 .container h2{
-    font-size: 5rem;
+    font-size: 7.5rem;
     line-height: 90%;
     letter-spacing: 0%;
     text-transform: uppercase;
