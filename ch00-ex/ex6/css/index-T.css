@@ -3,30 +3,34 @@ html{
     font-weight: 400;
     font-family: 'Pretendard', sans-serif;
 }
-.stp1{
-    font-family: "aboreto";
+header{
+    border-bottom: 2px solid #be0707;
 }
-.menu{
+.common-frame{
     width: 1600px;
     margin: 0 auto;
+}
+header .common-frame{
     display: flex;
     justify-content: space-between;
 }
-.menu .logo{
-    width: 100px;
-    height: 100px;
-    background: url(../img/logo.svg) no-repeat 50% 50% / contain;
-}
-/* 로고는 단순 배경이 아니라 콘텐츠에 해당하고, alt속성을 쓰지 못해서 시각장애인들에게 읽어주지 못하기 때문에 (=>웹표준에 어긋남) 이미지태그로 넣어줘야 함 */
-.menu ul{
+/* common-frame 클래명을 가지면 무조건 flex 되어버리니까 필요한 부분만 flex가 되도록 따로 선택해서 flex 주는게 좋음 */
+.gnb{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    /* align-items: center; */
 }
-.menu li{
-    padding: 1.9rem 1rem;
+.gnb li{
+    /* padding: 0 1rem; */
+}
+.gnb li a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+/* a태그는 인라인레벨태그이기 때문에 height: 100% 만 하면 적용 안됨 -> a태그의 자식은 텍스트임으로 a태그에 flex 해주면 flex-items는 텍스트가 되는 것임*/
     font-weight: 600;
     line-height: 100%;
+    text-align: center;
     text-transform: uppercase;
 }
 .banner{
