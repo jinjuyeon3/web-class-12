@@ -1,0 +1,145 @@
+*{margin: 0; padding: 0;}
+
+.a{background-color: red;}
+.b{background-color: green;}
+.c{background-color: blue;}
+.d{background-color: yellow;}
+.e{background-color: pink;}
+
+.box{
+    background-color: gray;
+    width: 800px;
+    height: 300px;
+    margin: 500px auto;
+}
+.ex1{
+    position: relative;
+}
+.ex1>div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.ex1 .a{
+    left: 0px;
+    top: 0px;
+}
+.ex1 .b{
+    left: 0px;
+    top: 200px;
+}
+.ex1 .c{
+    /* left: 50%
+    top: 50%
+    margin-left: -50px
+    margin-top: -50px */
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    /* 왼쪽에서 50% 떨어진 지점에서 너비/높이가 100px의 자식의 크기의 반절인 50px만큼을 빼주면, 부모태그의 너비가 변동이 있어도 정중앙에 오게 된다. */
+}
+.ex1 .d{
+    right: 0px;
+    top: 0px;
+}
+.ex1 .e{
+    right: 0px;
+    top: 200px;
+}
+
+/* ----------------------------- */
+
+.ex2{
+    position: relative;
+}
+.ex2>div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.ex2 .a{
+    left: -100px;
+    top: -100px;
+}
+.ex2 .b{
+    left: -100px;
+    bottom: -100px;
+}
+.ex2 .c{
+    left: calc(50% - 50px);
+    bottom: -100px;
+}
+.ex2 .d{
+    right: -100px;
+    top: -100px;
+}
+.ex2 .e{
+    right: -100px;
+    bottom: -100px;
+} 
+
+/* ----------------------------- */
+
+.ex3{
+    position: relative;
+}
+.ex3>div{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+}
+.ex3 .a{
+    left: 0;
+    top: -100%;
+}
+.ex3 .b{
+    left: 20%;
+    bottom: -100%;
+}
+.ex3 .c{
+    left: 40%;
+    top: -100%;
+}
+.ex3 .d{
+    left: 60%;
+    bottom: -100%;
+}
+.ex3 .e{
+    left: 80%;
+    top: -100%;
+}
+
+/* ----------------------------- */
+
+.ex4{
+    position: relative;
+}
+.ex4>section{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+.ex4 div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.ex4 .a{
+    left: 0;
+    top: -150px;
+}
+.ex4 .d{
+    right: 0;
+    bottom: -150px;
+}
+.ex4 .b{
+    right: 0px;
+    bottom: 0px;
+}
+.ex4 .c{
+    right: 0px;
+    top: 0px;
+}
+.ex4 .e{
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+}

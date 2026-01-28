@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    height: 1000px;
+}
+.a{background-color: skyblue;}
+.b{background-color: pink;}
+.c{background-color: yellowgreen;}
+.d{background-color: slateblue;}
+.sec-a{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    position: sticky;
+    left: 100px;
+    top: 100px;
+}
+.sec-b{
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+    position: sticky;
+    left: 100px;
+    top: 100px;
+}
+/* 부모태그에 position을 설정하지 않아도 자동으로 기준영역이 된다.
+화면상단에 맞물렸을 때부터 fixed된다. */
+/* [주의] 상위태그에 overflow를 주면 sticky가 적용이 안된다. */
+/* [주의] 부모태그에 flex를 주고 align-items:strech가 되어 있는 상태면 부모만큼의 높이만큼 늘어나서 sticky가 적용은 되지만 화면에서 효과가 잘안보인다. 그래서 align-items: flex-start 등으로 설정해줘야 한다. */
+.box.c{
+    height: 4000px;
+    display: flex;
+    /* align-items: flex-start; */
+}
+.box.c>*{
+    flex: 1;
+}
+.sec-c{
+    background-color: brown;
+    position: sticky;
+    left: 0px;
+    top: 10px;
+    align-self: flex-start;
+    min-height: 500px;
+    /* align-self는 container가 아니라 items에 직접 써서 교차축을 기준으로 정렬시킨다. */
+}
+.sec-d{
+    background-color: darkcyan;
+}
