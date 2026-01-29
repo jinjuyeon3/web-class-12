@@ -1,0 +1,65 @@
+.a{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: 1s;
+}
+/* transition속성은 반드시 마우스를 올려서 전환되기 전의 상태의 태그에 써줘야 함 */
+.a:hover{
+    background-color: blue;
+    width: 200px;
+    font-size: 2rem;
+}
+/* .a:hover은 a클래스인데 마우스가 올려진 a클래스라고 해석하면 됨 */
+.b{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: 1s;
+}
+.b:active{
+    background-color: black;
+    color: white;
+}
+/* .a:ctive는 마우스를 클릭해서 누르고 있을 때 전환되는 스타일 */
+.box{
+    background-color: aquamarine;
+    width: 300px;
+    height: 300px;
+}
+.c{
+    background-color: rebeccapurple;
+    width: 100px;
+    height: 100px;
+}
+.box .c:hover{
+    font-size: 2rem;
+}
+/* .box .c:hover는 box클래스 안에 있는 c클래스에 마우스를 올리면 전환된다고 해석하면 됨 */
+.box:hover .c{
+    background-color: gold;
+}
+/* .box:hover .c는 마우스가 올려진 box클래스 안에 있는 c클래스가 전환된다고 해석하면 됨 */
+.d:before{
+    content: "추가된 내용1";
+    border: 1px solid blue;
+    width: 200px;
+    height: 200px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+/* :before로 추가한 콘텐츠는 항상 선택된 태그의 첫번째 자식으로 만들어진다. content속성이 반드시 있어야 한다.
+display속성은 기본 lnline이다.*/
+/* display: inline-flex;를 쓰면 flex되면서 인라인레벨태그처럼 baseline에 맞춰서 배치가 된다. */
+.d:after{
+    content: "추가된 내용2";   
+    border: 1px solid red;
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+/* :after로 추가한 콘텐츠는 항상 선택된 태그의 마지막 자식으로 만들어진다. content속성이 반드시 있어야 한다.
+display속성은 기본 lnline이다.*/
+
+/* before, after와 같은 css가상의 태그는 사각장애인을 위한 스크린리더기가 읽어주지 않기 때문에 부가적인 내용(다운로드 아이콘 등)만 추가하는 것이 좋다.. */
