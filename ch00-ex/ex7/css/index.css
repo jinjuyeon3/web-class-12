@@ -18,7 +18,7 @@ header{
     display: flex;
     justify-content: flex-end;
 }
-nav{
+nav{ 
     width: 966px;
     height: 100px;
     color: white;
