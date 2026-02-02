@@ -1,10 +1,25 @@
 *{margin: 0; padding: 0;}
 
-.a{background-color: red;}
-.b{background-color: green;}
-.c{background-color: blue;}
-.d{background-color: yellow;}
-.e{background-color: pink;}
+.a{
+    background-color: red;
+    transition: all 1s ease 0s;
+}
+.b{
+    background-color: green;
+    transition: all 1s ease 0s;
+}
+.c{
+    background-color: blue;
+    transition: all 1s ease 0s;
+}
+.d{
+    background-color: yellow;
+    transition: all 1s ease 0s;
+}
+.e{
+    background-color: pink;
+    transition: all 1s ease 0s;
+}
 
 .box{
     background-color: gray;
@@ -14,6 +29,7 @@
 }
 .ex1{
     position: relative;
+    overflow: hidden;
 }
 .ex1>div{
     width: 100px;
@@ -24,9 +40,17 @@
     left: 0px;
     top: 0px;
 }
+.ex1:hover .a{
+    left: -100px;
+    top: -100px;
+}
 .ex1 .b{
     left: 0px;
     top: 200px;
+}
+.ex1:hover .b{
+    left: -100px;
+    top: 300px;
 }
 .ex1 .c{
     /* left: 50%
@@ -41,15 +65,24 @@
     right: 0px;
     top: 0px;
 }
+.ex1:hover .d{
+    right: -100px;
+    top: -100px;
+}
 .ex1 .e{
     right: 0px;
     top: 200px;
+}
+.ex1:hover .e{
+    right: -100px;
+    top: 300px;
 }
 
 /* ----------------------------- */
 
 .ex2{
     position: relative;
+    overflow: hidden;
 }
 .ex2>div{
     width: 100px;
@@ -60,21 +93,40 @@
     left: -100px;
     top: -100px;
 }
+.ex2:hover .a{
+    left: 0px;
+    top: 0px;
+}
 .ex2 .b{
     left: -100px;
     bottom: -100px;
+}
+.ex2:hover .b{
+    left: 0px;
+    bottom: 0px;
 }
 .ex2 .c{
     left: calc(50% - 50px);
     bottom: -100px;
 }
+.ex2:hover .c{
+    bottom: calc(50% - 50px);
+}
 .ex2 .d{
     right: -100px;
     top: -100px;
 }
+.ex2:hover .d{
+    right: 0px;
+    top: 0px;
+}
 .ex2 .e{
     right: -100px;
     bottom: -100px;
+} 
+.ex2:hover .e{
+    right: 0px;
+    bottom: 0px;
 } 
 
 /* ----------------------------- */
