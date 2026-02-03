@@ -88,3 +88,17 @@
 .l:hover{
     transform: skewY(-30deg);
 }
+
+.banner{
+    height: 600px;
+    background-color: pink;
+    position: relative;
+}
+.banner div{
+    border: 1px solid red;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+}
+/* 비디오태그가 배너의 공간을 가득 채우고 있는 상황이라면 이미지를 백그라운드로 넣는 것처럼 텍스트를 비디오 위에 배치할 수 없다. 그래서 position + transform을 사용하여 중앙에 배치한다. left: 50% -> 기준영역의 가로축의 절반만큼 이동, transform: translateX(-50%) -> 자신이 가진 너비의 50%만큼 가로축 방향으로 이동 // top: 50% -> 기준영역의 세로축의 절반만큼 이동, translateY(-50%) -> 자신이 가진 높이의 50%만큼 세로축 방향으로 이동 >> !!축약형 외우세요!! : transform: translate(-50%,-50%) */
