@@ -51,14 +51,13 @@ header:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 100px;
 }
 .banner h1{
     color: white;
     font-size: 140px;
     line-height: 100%;
     text-transform: uppercase;
+}
+.common-frame{
+    padding-top: 100px;
 }
