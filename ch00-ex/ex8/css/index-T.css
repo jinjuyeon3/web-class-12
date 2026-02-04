@@ -4,45 +4,47 @@ html{
     font-family: "Pretendard", sans-serif;
 }
 header{
-    background-color: white;
-    width: 100%;
     max-height: 100px;
+    overflow: hidden;
+    transition: all 1s ease 0s;
     position: fixed;
     left: 0;
     top: 0;
-    transition: all 1s ease 0s;
-    overflow: hidden;
+    width: 100%;
+    background-color: white;
 }
-.inner-frame{
+header:hover{
+    max-height: 500px;
+}
+.inner-header{
     width: 1600px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 49px;
 }
 .gnb{
     display: flex;
     gap: 3.3rem;
 }
 .gnb>li>a{
-    height: 100px;
     display: flex;
+    height: 100px;
     align-items: center;
+    margin-bottom: 1rem;
     font-weight: 600;
     font-size: .9rem;
     line-height: 100%;
     text-transform: uppercase;
+}
+.gnb ul>li{
     margin-bottom: 1rem;
-}
-header:hover{
-    max-height: 300px;
-}
-.gnb2>li>a{
     font-size: .8rem;
     line-height: 100%;
     text-transform: uppercase;
 }
-.gnb2 li{
-    margin-bottom: 1rem;
+.gnb ul>li:last-of-type{
+    margin-bottom: 0;
 }
 .banner{
     height: 800px;
@@ -50,15 +52,13 @@ header:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
 }
 .banner h1{
-    width: 1600px;
     color: white;
     font-size: 7rem;
     line-height: 100%;
     text-align: center;
     text-transform: uppercase;
-}
-.common-frame{
-    padding-top: 100px;
+    width: 1600px;
 }
