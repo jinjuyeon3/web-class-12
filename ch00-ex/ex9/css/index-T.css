@@ -1,0 +1,89 @@
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Pretendard",sans-serif;
+}
+header{
+    height: 100px;
+    position: relative;
+    z-index: 1000;
+}
+.inner-header{
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.gnb{
+    display: flex;
+    align-items: flex-start;
+    /* align-items가 strech되어있으면 모두 다 부모태그 높이만큼 늘어나니까 각자의 포함하는 콘텐츠만큼만 늘어나도록 하려면 flex-start를 줘야함 */
+}
+.gnb>li{
+    width: 200px;
+    padding: .5rem;
+    padding-top: 0;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 0 0 5px 6px;
+    max-height: 100px;
+    overflow: hidden;
+    transition: all 0.6s ease 0s;
+}
+.gnb>li:hover{
+    max-height: 400px;
+}
+.gnb>li>a{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: .9rem;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+/* .gnb ul>li{
+    margin-bottom: 1rem;
+}
+.gnb ul>li:last-of-type{
+    margin-bottom: 0;
+} */
+.gnb ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: .8rem;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.banner{
+    height: 800px;
+    position: relative;
+}
+.banner video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box-floting{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 1600px;
+    text-align: center;
+    color: white;
+}
+.box-floting h1{
+    margin-bottom: 1rem;
+    font-size: 7rem;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.box-floting p{
+    color: white;
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+}
