@@ -1,0 +1,16 @@
+@media (max-width: 768px){
+    html{
+        font-size: var(--base-mo);
+    }
+    .content {
+        width: auto;
+        margin: 0 1rem;
+    }
+    .content h2 {
+        font-size: 2.8rem;
+    }
+    .content figure img {
+        width: 100%;
+        height: 200px;
+    }
+} 
