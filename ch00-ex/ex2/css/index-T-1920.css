@@ -17,7 +17,7 @@
         line-height: 100%;
         text-transform: uppercase;
         text-align: center;
-        padding-top: 270px;
+        padding-top: 13.5rem;
         /* margin-top을 주면 안됨, 부모태그인 banner에 padding도 없고 border도 없으니 막히는 게 없어서 밀어낼 여백이 아무 것도 없어서 h1태크의 텍스트가 중앙 정렬 안되고 위로 올라감 그래서 나온 암묵적인 약속이 생김 */
         /* [중요!] 첫 번째 자식태그한테는 margin-top을 적용하지 마세요. */
         /* [중요!] 마지막 자식태그한테는 martgin-bottom을 적용하지 마세요. */
