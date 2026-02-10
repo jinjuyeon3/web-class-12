@@ -1,89 +1,131 @@
-html{
+.aboreto{
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+:root{
+    --base-pc: 20px;
+    --base-pad: 18px;
+    --base-mo: 14px;
+}
+
+
+@media (max-width:1920px){
+    html{
     font-family: 'Pretendard',sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: var(--base-pc);
+    }
+    .banner{
+        height: 599px;
+        border-radius: 0 0 150px 150px;
+        background: url(../img/banner.png) no-repeat 50% 75% / cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner h1{
+        color: white;
+        font-size: 2.5rem;
+        line-height: 100%;
+        text-transform: uppercase;
+    }
+    /* 배너의 크기가 변경되어도 언제나 중앙에 정렬되도록 하려면 padding을 주는 것이 아니라 flex로 만들어 줘야 함 */
+    .common-frame{
+        width: 1600px;
+        margin: 0 auto;
+    }
+    h2.deco-title{
+        font-size: 7.5rem;
+        line-height: 90%;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 10rem;
+        background: url(../img/deco.svg) no-repeat 50% 0%;
+        margin-bottom: 2rem;
+    }
+    /* 제목태그의 데코는 해당 제목태그에 스타일을 입히는 쪽이 유지보수도 좋고 편리함
+    예제 디자인에서는 h2태그 위에 있는 데코라서 padding을 주고 그 안에 백그라운드로 넣어주면 됨 */
+    .desc1{
+        font-size: 1rem;
+        line-height: 140%;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 5rem;
+    }
+    .desc1 em{
+        color: #770000;
+    }
+    body{
+        background: url(../img/background.png) repeat-x 0% 690px;
+    }
+    /* 도트패턴은 body나 wrap에 배경으로 넣어주면 되는데 화면 너비가 넓은 와이드 모니터에서도 잘리지 않고 보일 수 있도록 가로축으로 반복시켜줘야 하고 세로축 값을 정해서 위치를 맞춰주면 됨 */
+    .cafe-gal{
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2.5rem;
+    }
+    .cafe-gal figure{
+        flex: 1;
+        aspect-ratio: 790/434;
+        line-height: 0%;
+    }
+    /* flex: 1;설정해놓으면 이미지가 추가가 되더라도 width를 별도로 설정하지 않아도 됨 */
+    /* aspect-ratio: 790/434;로 설정해놓으면 해당 비율로 콘텐츠가 들어가게 됨 */
+    /* line-height: 0%;로 설정해놓으면 콘텐츠 아래 생기는 작은 여백이 없어지게 됨 */
+    .cafe-gal figure img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+    /* 부모태그에 aspect-ratio: 790/434;로 설정해놓았기 때문에 width, height: 100%;로 주면 해당 비율로 적용됨  */
+    .common-frame h3{
+        font-size: 2rem;
+        line-height: 140%;
+        margin-bottom: 1rem;
+    }
+    .common-frame h3 em{
+        color: #770000;
+    }
+    .common-frame h3+p{
+        margin-bottom: .5rem;
+    }
+    .common-frame p strong{
+        font-weight: 700;
+    }
 }
-.aboreto{
-  font-family: "Aboreto", system-ui;
-  font-weight: 400;
-  font-style: normal;
+
+@media (max-width:1024px){
+    .common-frame{
+        width: auto;
+        margin: 0 2rem;
+    }
+    h2.deco-title {
+        font-size: 4.4rem;
+    }
+    .cafe-gal figure img {
+        height: 434px;
+    }
 }
-.banner{
-    height: 599px;
-    border-radius: 0 0 150px 150px;
-    background: url(../img/banner.png) no-repeat 50% 75% / cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.banner h1{
-    color: white;
-    font-size: 2.5rem;
-    line-height: 100%;
-    text-transform: uppercase;
-}
-/* 배너의 크기가 변경되어도 언제나 중앙에 정렬되도록 하려면 padding을 주는 것이 아니라 flex로 만들어 줘야 함 */
-.common-frame{
-    width: 1600px;
-    margin: 0 auto;
-}
-h2.deco-title{
-    font-size: 7.5rem;
-    line-height: 90%;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 10rem;
-    background: url(../img/deco.svg) no-repeat 50% 0%;
-    margin-bottom: 2rem;
-}
-/* 제목태그의 데코는 해당 제목태그에 스타일을 입히는 쪽이 유지보수도 좋고 편리함
-예제 디자인에서는 h2태그 위에 있는 데코라서 padding을 주고 그 안에 백그라운드로 넣어주면 됨 */
-.desc1{
-    font-size: 1rem;
-    line-height: 140%;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 5rem;
-}
-.desc1 em{
-    color: #770000;
-}
-body{
-    background: url(../img/background.png) repeat-x 0% 690px;
-}
-/* 도트패턴은 body나 wrap에 배경으로 넣어주면 되는데 화면 너비가 넓은 와이드 모니터에서도 잘리지 않고 보일 수 있도록 가로축으로 반복시켜줘야 하고 세로축 값을 정해서 위치를 맞춰주면 됨 */
-.cafe-gal{
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2.5rem;
-}
-.cafe-gal figure{
-    flex: 1;
-    aspect-ratio: 790/434;
-    line-height: 0%;
-}
-/* flex: 1;설정해놓으면 이미지가 추가가 되더라도 width를 별도로 설정하지 않아도 됨 */
-/* aspect-ratio: 790/434;로 설정해놓으면 해당 비율로 콘텐츠가 들어가게 됨 */
-/* line-height: 0%;로 설정해놓으면 콘텐츠 아래 생기는 작은 여백이 없어지게 됨 */
-.cafe-gal figure img{
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
-}
-/* 부모태그에 aspect-ratio: 790/434;로 설정해놓았기 때문에 width, height: 100%;로 주면 해당 비율로 적용됨  */
-.common-frame h3{
-    font-size: 2rem;
-    line-height: 140%;
-    margin: 1rem;
-}
-.common-frame h3 em{
-    color: #770000;
-}
-.common-frame h3+p{
-    margin-bottom: .5rem;
-}
-.common-frame p strong{
-    font-weight: 700;
+
+@media (max-width:768px){
+    .common-frame {
+        width: auto;
+        margin: 0 1rem;
+    }
+    h2.deco-title {
+        font-size: 3.6rem;
+    }
+    .cafe-gal {
+        flex-direction: column;
+    }
+    .cafe-gal figure {
+        height: 200px;
+    }
+    .cafe-gal figure img {
+        height: 100%;
+    }
 }

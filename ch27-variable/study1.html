@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수</title>
+</head>
+<body>
+    <h1>변수</h1>
+    <p>변할 가능성이 있는 수</p>
+    <script>
+        let a;  // a라는 변수를 선언(생성)한다.
+        a = 10  // a라는 변수 10으로 초기화한다.
+        console.log(a + 10)
+        console.log(a)
+        a=a+10
+        console.log(a)
+        a+=10
+        console.log(a)
+        let b = 20
+        b-=2
+        console.log(b)
+        let c = "안녕하세요"
+        // (c[2]+c[4]).length
+        c.length
+        console.log(c.length)
+        console.log(c[2])
+        let name = prompt("당신의 이름은 무엇인가요?")
+        document.write("<h3>"+name+"님 안녕하세요!</h3>")
+        let age = prompt(name+"님의 나이는 몇 살인가요?")
+        document.write("<p>"+name+"님의 나이는 "+age+"살이군요. 반갑습니다.</p>")
+    </script>
+    <h1>상수</h1>
+    <p>변하지 않는 수</p>
+    <script>
+        123
+        "연진주"
+    </script>
+</body>
+</html>
