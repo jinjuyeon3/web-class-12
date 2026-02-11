@@ -99,33 +99,46 @@
 }
 
 @media (max-width:1024px){
+    html{
+        font-size: var(--base-pad);
+    }
+    .banner h1 {
+        font-size: 50px;
+    }
     .common-frame{
         width: auto;
         margin: 0 2rem;
     }
     h2.deco-title {
-        font-size: 4.4rem;
+        font-size: 80px;
+        background: url(../img/deco.svg) no-repeat 50% -15%;
     }
-    .cafe-gal figure img {
-        height: 434px;
+    .cafe-gal figure {
+       aspect-ratio: 1/1;
     }
-}
+}    
 
 @media (max-width:768px){
+    html{
+        font-size: var(--base-mo);
+    }
     .common-frame {
         width: auto;
         margin: 0 1rem;
     }
     h2.deco-title {
-        font-size: 3.6rem;
+        font-size: 50px;
+        background: url(../img/deco.svg) no-repeat 50% -80%;
     }
     .cafe-gal {
         flex-direction: column;
     }
     .cafe-gal figure {
-        height: 200px;
+       aspect-ratio: initial;
     }
-    .cafe-gal figure img {
-        height: 100%;
+    .cafe-gal figure img{
+        width: 100%;
+        aspect-ratio: 365/200;
+        height: 200px;
     }
 }
