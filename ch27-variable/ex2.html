@@ -17,7 +17,10 @@
             let userName  = prompt("이름을 입력해주세요.")
             let userWeight = Number(prompt("당신의 체중(kg)을 입력해주세요."))
             let userHeight = Number(prompt("당신의 키(cm)를 입력해주세요."))
-            let userBmi = (userWeight/Math.pow((userHeight)*0.01,2)).toFixed(2)
+            let userBmi = Number((userWeight/Math.pow((userHeight)*0.01,2)).toFixed(2))
+
+            let userResult = userBmi<=18.5?"저체중":userBmi<=23?"정상":userBmi<=25?"과체중":"비만"
+
             document.write(`
             <dl class="bmi-dl">
                 <dt>이름</dt>
@@ -28,8 +31,12 @@
                 <dd>${userHeight}cm</dd>
                 <dt>BMI</dt>
                 <dd>${userBmi}</dd>
+                <dt>상태</dt>
+                <dd>[${userName}]님은 [${userResult}]입니다.</dd>
             </dl>
             `)
+
+
         </script>
         <div class="bmigrp">
             <span class="t1">BMI</span>

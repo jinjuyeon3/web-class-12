@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boolean</title>
+</head>
+<body>
+    <h1>boolean - 참 거짓 데이터</h1>
+    <script>
+        10>2 //true
+        10<2 //false
+        10>=2 //true 10이 2보다 크거나 같다.
+        10<=2 //false 10이 2보다 작거나 같다.
+        10==10 //ture 10이 10과 같다.
+        10===10 //true 10이 10과 데이터 형태까지 모두 같다.(엄격한 비교)
+        10!=1 //true 10이 1과 같지 않다.
+        !(10>2) //false ('!'는 'not', 즉 부정을 의미한다.)
+        console.log(10>2)
+        console.log(!!(10>2))
+
+        //아래 간주표현은 그냥 외우세요.
+
+        0 //숫자 0은 false로 간주된다.(계산한 값이 false인 게 아니라 '수가 없다'라고 판단한다는 뜻)
+        "" //문자데이터인데 내용이 없는 것도 false로 간주된다.
+        let a //변수를 선언만 하고 값을 초기화하지 않은 경우도 false로 간주된다.
+        undefined //변수를 선언만 하고 값을 초기화하지 않은 경우 나타나는 undefined도 false로 간주된다.
+        null //'비우다'라는 뜻으로 '값이 없다'고 해석하여 false로 간주된다.
+
+        !-12 //false
+        !"" //true
+        !a //true
+
+        let b = null //b라는 변수를 설정한 상태(undefined)에서 값을 명확하게 초기화 하겠다는 뜻
+    </script>
+</body>
+</html>
