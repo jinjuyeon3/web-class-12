@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+</head>
+<body>
+    <script>
+        let a = ["사과","배","귤","수박"]
+        console.log(a[0][1])
+        console.log(a[2])
+        console.log(a.length)
+        let b = [
+            1,
+            2,
+            3,
+            4
+        ][3]
+        // a[b[3]?1:2]   >> "배"
+        // a[b[3]?1:2].length   >> 1
+        let c = [
+            "장윤서",
+            "이은지",
+            "김선영",
+            "김가희",
+            "최예슬"
+        ]
+        c[0] // "장윤서"
+        c[4] // "최예슬"
+        c[1].length // 3
+        c[2][1]+c[3][2] // "선희"
+        console.log((!c[3]||!c[4]||c[1])[0]) // "이"
+        console.log((!c[3]||!c[4]||!c[1])[0]) // undefined
+
+        let d = 0||0||1
+        console.log(d)
+
+        let person1 = ["연진주","여자","ISFJ",155,49,false,["산책","카페투어","여행"]]
+        person1[0] // "연진주"
+        person1[3] // 155
+        person1[5]?"기혼":"미혼" // "미혼"
+        person1[6][2] // "러닝"
+        person1[6][2][1] // "닝"
+        
+    </script>
+</body>
+</html>
+
+<!-- []를 써서 배열데이터를 나타내고 인덱스박스라고 부른다. -->
+<!-- 콤마(,)를 써서 원소를 나열한다. -->
+<!-- 원소는 무한대로 저장할 수 있다. (0번째부터 순번이 시작됨) -->
+<!-- 자바스크립트에서는 문자데이터들이 하나하나 배열되어 나타나기 때문에 '문자열'이라고 한다. -->
+<!-- 저장하는 순서대로 원소의 순번이 정해지기 때문에 배열순서가 중요함 -->
