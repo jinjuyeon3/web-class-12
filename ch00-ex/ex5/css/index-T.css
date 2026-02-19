@@ -1,3 +1,11 @@
+:root{
+    --base-pc: 20px;
+    --base-pad: 18px;
+    --base-mo: 14px;
+    --base-wide1: 22px
+}
+
+
 html{
     font-family: 'Pretendard',sans-serif;
     font-weight: 400;
@@ -83,4 +91,58 @@ html{
     -webkit-line-clamp: 2;                
     overflow: hidden;                     
     text-overflow: ellipsis; 
+}
+
+
+@media (max-width:3840px){
+    html{
+        font-size: var(--base-wide1);
+    }
+}
+
+@media (max-width:1920px){
+    html{
+        font-size: var(--base-pc);
+    }
+}
+
+@media (max-width:1024px){
+    html{
+        font-size: var(--base-pad);
+    }
+    .banner {
+        height: 600px;
+    }
+    .banner h2 {
+        flex-basis: auto;
+        margin: 0 2rem;
+        font-size: 4.4rem;
+    }
+    .common-frame {
+        width: auto;
+        margin: 0 2rem;
+    }
+}
+
+@media (max-width:768px){
+    html{
+        font-size: var(--base-mo);
+    }
+    .common-frame {
+        margin: 0 1rem;
+    }
+    .banner {
+        height: 500px;
+        align-items: center;
+    }
+    .banner h2 {
+        margin: 0 1rem;
+        padding-top: 0;
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    .gallery {
+        display: grid;
+        gap: 2rem;
+    }
 }

@@ -1,0 +1,7 @@
+.box{
+    display: grid;
+    gap: 10px;
+}
+ul{
+    border: 1px solid black;
+}
