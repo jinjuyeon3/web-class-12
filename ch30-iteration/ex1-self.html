@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私の好きなカフェ</title>
+    <link rel="stylesheet" href="./css/ex1-self.css">
+    <script src="./js/ex1-self.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <h1>私の好きなカフェ</h1>
+        <p>私の好きなカフェをご紹介します。</p>
+        <ul class="grid-box">
+            <script>
+                for(let i=0;i<cafeList.length;i++){
+                    document.write(`
+                        <li>
+                        <figure>
+                            <img src="./img/ex1-self-img/${cafeList[i][6]}" alt="${cafeList[i][1]}">
+                        </figure>
+                        <h2>${cafeList[i][1]}</h2>
+                        <dl>
+                            <dt>住所</dt>
+                            <dd>${cafeList[i][2]}</dd>
+                            <dt>営業時間</dt>
+                            <dd>${cafeList[i][3]}</dd>
+                            <dt>公式サイト</dt>
+                            <dd><a href="${cafeList[i][5]}" target=_blank>${cafeList[i][4]}</a></dd>
+                        </dl>
+                        </li>
+                    `)
+                }
+            </script>
+        </ul>
+    </div>
+</body>
+</html>
