@@ -109,6 +109,15 @@ html{
     }
 }
 
+@media (max-width:1600px){
+    .common-frame {
+        width: auto;
+        margin: 0 2rem;
+    }
+}
+
+/* 1024px 이상 1920px 이하일때 가로스크롤이 생기면서 배너 옆에 여백이 생기는데 그 공백을 없애고 싶다면 브레이크 포인트를 하나 더 만들거나 아래 1024px을 1600px로 수정해주면 됨 */
+
 @media (max-width:1024px){
     html{
         font-size: var(--base-pad);
