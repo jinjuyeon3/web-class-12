@@ -1,3 +1,10 @@
+:root{
+    --base-pc:20px;
+    --base-pad:18px;
+    --base-mo:14px;
+    --base-wide1:22px;
+}
+
 html{
     font-size: 20px;
     font-weight: 400;
@@ -46,4 +53,36 @@ header .common-frame{
     line-height: 100%;
     text-align: center;
     text-transform: uppercase;
+}
+
+@media (max-width:5120px){}
+@media (max-width:3840px){
+    html{
+        font-size: var(--base-wide1);
+    }
+}
+@media (max-width:1920px){
+    html{
+        font-size: var(--base-pc);
+    }
+}
+@media (max-width:1024px){
+    html{
+        font-size: var(--base-pad);
+    }
+    .common-frame {
+        width: auto;
+        margin: 0 2rem;
+    }
+    .banner {
+        height: 600px;
+    }
+    .banner h1 {
+        font-size: 4.4rem;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size: var(--base-mo);
+    }
 }
