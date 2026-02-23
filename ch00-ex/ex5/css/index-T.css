@@ -94,6 +94,9 @@ html{
 }
 
 
+@media (max-width:5120px){
+
+}
 @media (max-width:3840px){
     html{
         font-size: var(--base-wide1);
@@ -142,7 +145,7 @@ html{
         font-size: 3.5rem;
     }
     .gallery {
-        display: grid;
+        flex-direction: column;
         gap: 2rem;
     }
 }

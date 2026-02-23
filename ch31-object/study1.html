@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <h1>객체 - object</h1>
+    <p>자바스크립트에서 사물을 나타낼 때 사용하는 표현</p>
+    <p>그리고 각각의 프로퍼티는 :(콜론)을 사용하여 key:vlaue 형태로 구성되어 있다.</p>
+    <p>여기서 key값을 사용하여 저장된 value값을 가져올 수 있다. key값은 객체안의 속해 있는 변수처럼 활용된다.</p>
+    <script>
+        let person1 = ["정현진","남자",50]
+        console.log(person1[0])
+        let person2 = {gender:"남자",age:50,name:"정현진"}
+        console.log(person2["name"])
+        console.log(person2.name)
+        let person3 = {name:"장윤서",gender:"여자",age:27}
+        // person3.name[1] // "윤"
+        // person3.gender.length-2?A:B // "B"
+
+    </script>
+</body>
+</html>
+<!-- {key1:value1,key2:value2,...} 로 나타내고 각각의 속성(property)은 콤마로 구분한다. -->
+<!-- key값은 객체 안에서만 사용되는 변수라고 생각하면 된다. -->
+<!-- 배열데이터와 달리 저장된 프로퍼티의 순번은 관계없다. -->
