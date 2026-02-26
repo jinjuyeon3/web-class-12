@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서객체 - Document Object Model....?</title>
+</head>
+<body>
+    <h1>제목1</h1>
+    <p class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quo tempore numquam animi, aliquam similique repudiandae consequatur et vitae, veniam illo ea atque fuga neque voluptate perferendis dicta sunt quaerat.</p>
+    <p class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quo tempore numquam animi, aliquam similique repudiandae consequatur et vitae, veniam illo ea atque fuga neque voluptate perferendis dicta sunt quaerat.</p>
+    <p class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, quo tempore numquam animi, aliquam similique repudiandae consequatur et vitae, veniam illo ea atque fuga neque voluptate perferendis dicta sunt quaerat.</p>
+    <script>
+        let h1tag = document.querySelector("h1")
+        h1tag.style.color = "red"
+        h1tag.style.fontSize = "80px"
+        h1tag.style.textDecoration = "underline"
+
+        let ptag = document.querySelectorAll(".a") // a클래스를 모두 선택해서 각각을 원소로 하는 [{},{},{}] 형태로 저장됨
+        // ptag[0].style.color = "green"
+        // ptag[1].style.color = "green"
+        // ptag[2].style.color = "green"
+        for(let i=0 ; i<ptag.length ; i++){
+            ptag[i].style.color = "green"
+        }
+        ptag.forEach(function(tag){
+            tag.style.color = "red"
+        })
+        ptag.forEach((tag)=>{
+            tag.style.color = "blue"
+        })
+        ptag.forEach(tag=>{
+            tag.style.color = "green"
+        })
+    </script>
+</body>
+</html>
