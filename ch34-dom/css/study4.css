@@ -1,0 +1,29 @@
+.button-type{
+    border: 1px solid #000;
+    display: inline-block;
+    padding:0.2rem 3.5rem;
+    cursor: pointer;
+}
+html{
+    font-size: 20px;
+}
+.font-controler{
+    position: fixed;
+    right: 1rem;
+    top: 0;
+}
+.font-controler ul{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+ul{
+    list-style: none;
+}
+.chip{
+    display: inline-block;
+    padding: 0.5rem;
+    background: #9C27B0;
+    border-radius: 5px;
+    color: white;
+}
