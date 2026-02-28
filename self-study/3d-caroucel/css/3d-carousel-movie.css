@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Pretendard',sans-serif;
+    font-size: 20px;
+}
+.banner{
+    background: url(../img/banner2.jpg) no-repeat 50% 50% / cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: .5rem;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    box-shadow: 5px 5px 10px darkgray;
+}
+.common-frame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+.button{
+    background: white;
+    border:1px solid #6a11cb;
+    transition: all 1s ease 0s;
+    border-radius: .5rem;
+    width: 80px;
+    height: 40px;
+    padding: .5rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+.button:hover{
+    color: white;
+    background: linear-gradient(120deg, #6a11cb, #2575fc);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12rem;
+    perspective: 1500px;
+}
+.caroucel{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.movieInfo{
+    margin: 4rem 0;
+    text-align: center;
+}
+h2{
+    margin-bottom: .5rem;
+}

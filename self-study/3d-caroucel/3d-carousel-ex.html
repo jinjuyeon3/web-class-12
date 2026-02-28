@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Carousel 연습</title>
+    <link rel="stylesheet" href="./css/3d-carousel-ex.css">
+</head>
+<body>
+    <div class="container">
+        <div class="carousel">
+            <div class="card">1</div>
+            <div class="card">2</div>
+            <div class="card">3</div>
+            <div class="card">4</div>
+            <div class="card">5</div>
+        </div>
+        <button id="prev">이전</button>
+        <button id="next">다음</button>
+    </div>
+    
+    <script>
+        const carousel = document.querySelector(".carousel");
+        const cards = document.querySelectorAll(".card");
+        const cardCount = cards.length;
+        const angle = 360 / cardCount;
+        let currentIndex = 0;
+
+        // 카드들을 원형으로 배치
+        cards.forEach((card, i) => {
+        card.style.transform = `
+            rotateY(${angle * i}deg) 
+            translateZ(500px)
+        `;
+        });
+
+        document.querySelector("#next").addEventListener("click", () => {
+        currentIndex++;
+        carousel.style.transform = `
+            rotateY(${-angle * currentIndex}deg)
+        `;
+        });
+
+        document.querySelector("#prev").addEventListener("click", () => {
+        currentIndex--;
+        carousel.style.transform = `
+            rotateY(${-angle * currentIndex}deg)
+        `;
+        });
+    </script>
+
+</body>
+</html>

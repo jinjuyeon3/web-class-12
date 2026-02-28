@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Carousel - movie</title>
+    <link rel="stylesheet" href="./css/pretendard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/3d-carousel-movie.css">
+</head>
+<body>
+    <div class="banner">
+        <h1>cinema</h1>
+    </div>
+    <div class="container">
+        <div class="caroucel">
+            <img class="card" src="./img/극한직업.jpg" alt="영화 극한직업">
+            <img class="card" src="./img/러브레터.jpg" alt="영화 러브레터">
+            <img class="card" src="./img/보스베이비.jpg" alt="영화 보스베이비">
+            <img class="card" src="./img/영웅본색.jpg" alt="영화 영웅본색">
+            <img class="card" src="./img/해리포터-마법사의돌.jpg" alt="영화 해리포터 마법사의돌">
+        </div>
+
+        <div class="movieInfo"></div>
+
+        <div class="common-frame">
+            <div class="button" id="prev">이전</div>
+            <div class="button" id="next">다음</div>
+        </div>
+    </div>
+
+    <script>
+        const carousel = document.querySelector(".caroucel")
+        const cards = document.querySelectorAll(".card")
+        const cardCount = cards.length
+        const angle = 360/cardCount;
+        let currentIndex = 0;
+
+        const movieData = [
+            {
+            title: "극한직업",
+            desc: "마약반 형사들의 치킨집 위장 수사"
+            },
+            {
+            title: "러브레터",
+            desc: "아련한 첫사랑과의 추억"
+            },
+            {
+            title: "보스베이비",
+            desc: "아기와 형의 좌충우돌 스파이 작전"
+            },
+            {
+            title: "영웅본색",
+            desc: "뜨거운 우정과 복수 그리고 갈등을 그린 느와르 액션"
+            },
+            {
+            title: "해리포터 마법사의 돌",
+            desc: "소년 마법사의 첫 모험"
+            },
+        ];
+        const infoBox = document.querySelector(".movieInfo");
+
+        function updateMovieInfo() {
+        infoBox.innerHTML = `
+            <h2>${movieData[currentIndex].title}</h2>
+            <p>${movieData[currentIndex].desc}</p>
+        `;
+        }
+
+        cards.forEach((card,i)=>{
+            card.style.transform = `rotateY(${angle*i}deg)
+            translateZ(400px)`;
+        })
+
+        document.querySelector("#next").addEventListener("click",()=>{
+            currentIndex++;
+            currentIndex = (currentIndex + cardCount) % cardCount;
+            carousel.style.transform = `rotateY(${-angle*currentIndex}deg)`;
+            updateMovieInfo();
+        })
+
+        document.querySelector("#prev").addEventListener("click",()=>{
+            currentIndex--;
+            currentIndex = (currentIndex + cardCount) % cardCount;
+            carousel.style.transform = `rotateY(${-angle*currentIndex}deg)`;
+            updateMovieInfo();
+        })
+
+        updateMovieInfo();
+
+</script>
+</body>
+</html>
