@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Pretendard',sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+.innerFrame{
+    margin:0 auto;
+    margin-top: 3rem;
+    width: 1200px;
+}
+.innerFrame h1{
+    font-size: 1.5rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 150px;
+}
+.movieList{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+li{
+    width: 200px;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+}
+figure{
+    width: 200px;
+    height: 300px;
+    line-height: 0%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .2rem;
+    filter: brightness(1);
+    transition: all .4s ease 0s;
+}
+li:hover img{
+    filter: brightness(.3);
+}
+.summary{
+    word-wrap: wrap;
+    color: white;
+    font-size: .6rem;
+    line-height: 140%;
+    position: absolute;
+    left: 0;
+    top: 20%;
+    opacity: 0;
+    margin: 0 1rem;
+}
+li:hover .summary{
+    opacity: 1;
+}
+.rank{
+    background: #a6a6a6;
+    padding: .5rem;
+    border-radius: 0 0 .2rem .2rem;
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: 0;
+}
+.booking{
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: linear-gradient(120deg, #6a11cb, #2575fc);
+    border-radius: .2rem;
+    height: 40px;
+    font-size: .9rem;
+}

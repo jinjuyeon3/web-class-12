@@ -6,13 +6,6 @@ html{
     font-family: 'Pretendard',sans-serif;
     font-size: 20px;
 }
-.banner{
-    background: url(../img/banner2.jpg) no-repeat 50% 50% / cover;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 h1{
     color: white;
     font-family: "Playfair Display", serif;
