@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이벤트</title>
     <link rel="stylesheet" href="./css/study4.css">
+    <script src="./js/study4.js"></script>
 </head>
 <body>
     <aside class="font-controler">
@@ -26,61 +27,7 @@
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, cupiditate distinctio magni vel doloribus accusantium quaerat. Quidem esse in praesentium, optio ut iusto aliquam architecto, alias necessitatibus voluptates exercitationem neque!
     </div>
 
-    <script>
-        let btn1 = document.querySelector("#btn1")
-        btn1.addEventListener("click",function(){
-            alert("안녕하세요")
-        })
-        // 이 동작을 이벤트리스너 라고 부른다.
-        
-        let btn2 = document.querySelector("#btn2")
-        let box = document.querySelector(".box")
-        btn2.addEventListener("click",()=>{
-            // let box = document.querySelector(".box")
-            box.style.backgroundColor = "lime"
-        })
-        // 익명함수 내에 box라는 클래스를 선택하면 클릭할 때마다 새로 동작을 실행하기 때문에 1번 선택해서 동작을 실행하도록 바깥쪽에서 선택하는 게 좋다.
-        
-        const btn3 = document.querySelector("#btn3")
-        btn3.addEventListener("click",()=>{
-            box.style.backgroundColor = "initial"
-        })
-        // 최근에는 태그를 선택할 때 let보다 const로 선택하는 경우가 많다.
-
-        let basicFontSize = 20
-        let minFontSize = 14
-        let maxFontSize = 26
-        const chip = document.querySelector(".chip")
-        const btnSmallFont = document.querySelector("#btn-small-font")
-        const html = document.querySelector("html")
-
-        btnSmallFont.addEventListener("click",()=>{
-            if(basicFontSize<=minFontSize){
-                alert(minFontSize+"픽셀 보다 작게 글씨를 줄일 수 없습니다.")
-                return
-            }
-            basicFontSize-=1
-            chip.innerHTML = `${basicFontSize}px`
-            html.style.fontSize = `${basicFontSize}px`
-        })
-
-        const btnLargeFont = document.querySelector("#btn-large-font")
-        btnLargeFont.addEventListener("click",()=>{
-            if(basicFontSize>=maxFontSize){
-                alert(maxFontSize+"픽셀 보다 크게 글씨를 키울 수 없습니다.")
-                return
-            }
-            basicFontSize+=1
-            chip.innerHTML = `${basicFontSize}px`
-            html.style.fontSize = `${basicFontSize}px`
-        })
-
-        const btnOriginalFont = document.querySelector("#btn-original-font")
-        btnOriginalFont.addEventListener("click",()=>{
-            basicFontSize = 20
-            chip.innerHTML = `${basicFontSize}px`
-            html.style.fontSize = `${basicFontSize}px`
-        })
-    </script>
 </body>
 </html>
+
+<!-- script태그 안에 HTML태그를 저장한 경우 script 태그를 HTML 태그 위로 올려버리면 실행이 안된다. 그래서 script태그는 보통 body태그 안 최하단에 놓는다. 외부 파일로 빼놓고 연결할 때도 주의해야 함 => document.addEventListener("DOMContentLoaded",function(){}를 사용함 -->

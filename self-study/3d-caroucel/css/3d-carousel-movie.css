@@ -3,6 +3,7 @@
     padding: 0;
 }
 html{
+    /* background: #000; */
     font-family: 'Pretendard',sans-serif;
     font-size: 20px;
 }
@@ -29,9 +30,12 @@ img {
     gap: 1rem;
 }
 .button{
-    background: white;
-    border:1px solid #6a11cb;
-    transition: all 1s ease 0s;
+    /* background: white; */
+    border:2px solid transparent;
+    background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(45deg, #6a11cb, #2575fc) border-box;
+    transition: all .5s ease 0s;
     border-radius: .5rem;
     width: 80px;
     height: 40px;
@@ -56,14 +60,17 @@ img {
 }
 .caroucel{
     position: relative;
+    left: 0;
+    top: 100px;
     width: 200px;
     height: 300px;
     transform-style: preserve-3d;
     transition: transform 1s;
 }
 .movieInfo{
-    margin: 4rem 0;
     text-align: center;
+    margin: 12rem 0;
+    margin-bottom: 2rem;
 }
 h2{
     margin-bottom: .5rem;

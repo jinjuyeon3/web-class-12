@@ -1,0 +1,35 @@
+img{
+    max-width: 100%;
+}
+.popup{
+    border: 1px solid red;
+    position: fixed;
+    left: 200px;
+    top: 200px;
+    width: 300px;
+    background-color: white;
+    /* 배경색 안채우면 공중에 뜨면서 뒤가 비춰보임 */
+}
+.popup-controler{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.popup-controler span{
+    cursor: pointer;
+    padding: .4rem 1rem;
+    border: 1px solid #000;
+}
+.popup{
+    transition: all 1s ease 0s;
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+.popup.hide{
+    /* display: none; */
+    opacity: 0;
+    pointer-events: none;
+    /* opacity: 0 이 되었을때 팝업 자체는 존재하기 때문에 마우스에 반응한다. 따라서 마우스에도 반응하지 않도록 설정해주면 좋다. */
+    transform: scale(0.6);
+}

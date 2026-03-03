@@ -3,6 +3,7 @@
     padding: 0;
 }
 html{
+    background: #000;
     font-size: 20px;
     font-weight: 400;
     font-family: 'Pretendard',sans-serif;
@@ -20,6 +21,7 @@ a{
     width: 1200px;
 }
 .innerFrame h1{
+    color: white;
     font-size: 1.5rem;
     margin: 0 auto;
     margin-bottom: 2rem;
@@ -68,22 +70,30 @@ li:hover .summary{
     opacity: 1;
 }
 .rank{
-    background: #a6a6a6;
+    /* background: #a6a6a6; */
     padding: .5rem;
     border-radius: 0 0 .2rem .2rem;
     color: white;
     position: absolute;
-    left: 10%;
-    top: 0;
+    left: 0px;
+    top: -13px;
+    text-shadow: 0 5px 10px #000;
+    font-size: 2.5rem;
 }
 .booking{
     margin-top: .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    /* color: white;
     background: linear-gradient(120deg, #6a11cb, #2575fc);
-    border-radius: .2rem;
+    border-radius: .2rem; */
     height: 40px;
     font-size: .9rem;
+
+    border: 3px solid transparent;
+    border-radius: 0.7rem;
+    background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(45deg, #6a11cb, #2575fc) border-box;
 }
