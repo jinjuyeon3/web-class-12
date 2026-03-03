@@ -58,16 +58,22 @@ li:hover img{
 .summary{
     word-wrap: wrap;
     color: white;
-    font-size: .6rem;
+    font-size: .8rem;
     line-height: 140%;
     position: absolute;
     left: 0;
     top: 20%;
     opacity: 0;
     margin: 0 1rem;
+    transform: scale(1);
+    transition: all 1s ease 0s;
 }
 li:hover .summary{
     opacity: 1;
+    /* transform: scale(1.1); */
+}
+li:hover img{
+    transform: scale(1.1);
 }
 .rank{
     /* background: #a6a6a6; */
@@ -81,7 +87,7 @@ li:hover .summary{
     font-size: 2.5rem;
 }
 .booking{
-    margin-top: .5rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;

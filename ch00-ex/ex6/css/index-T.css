@@ -5,12 +5,9 @@
     --base-wide1:22px;
 }
 
-html{
-    font-size: 20px;
-    font-weight: 400;
-    font-family: 'Pretendard', sans-serif;
+.hiddenGnb{
+    display: none;
 }
-
 
 headermobile{
     display: none;
@@ -29,7 +26,11 @@ headermobile{
     object-fit: contain;
 }
 
-
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Pretendard', sans-serif;
+}
 header{
     border-bottom: 2px solid #be0707;
 }
@@ -76,6 +77,7 @@ header .common-frame{
 }
 
 
+
 @media (max-width:5120px){}
 @media (max-width:3840px){
     html{
@@ -106,6 +108,39 @@ header .common-frame{
 }
 
 @media (max-width:900px){
+    .hiddenGnb{
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        transform: translateX(100%);
+        transition: all .5s ease 0s;
+    }
+    .hiddenGnb.on{
+        transform: translateX(0%);
+    }
+    .hdTop{
+        border-bottom: 1px solid #000;
+    }
+    .hdTop .common-frame{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hdBot{
+        margin-top: 1rem;
+    }
+    .hdBot ul li{
+        padding: 1rem 0;
+        border-bottom: 1px solid #00000017;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 100%;
+    }
     header{
             display: none;
     }
