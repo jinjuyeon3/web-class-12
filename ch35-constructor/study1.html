@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자 함수</title>
+</head>
+<body>
+    <h1>생성자 함수</h1>
+    <p>생성자 함수란? 객체를 생성하는 함수를 뜻한다.</p>
+    <script>
+        function Person(uname,uage){
+            this.name = uname
+            this.age = uage
+            this.sayHello = function(){
+                alert(`안녕하세요 저는 ${this.name}입니다.`)
+            }
+        }
+        let person1 = new Person("연진주",31)
+        let person2 = new Person("Yuuki",25)
+        person1.sayHello()
+        person2.sayHello()
+
+        // let person1 = {
+        //     name:"연진주",
+        //     age:"31",
+        //     sayHello:function(){alert(`안녕하세요 저는 ${this.name}입니다.`)}
+        // }
+        
+    </script>
+</body>
+</html>
+
+<!-- 생성자 함수를 만들때는 첫번째 문자를 대문자로 쓰는 것이 암묵적인 약속임 -->
+<!-- 생성자 함수를 불러올 때는 new 라는 키워드를 반드시 써줘야 함 -->
