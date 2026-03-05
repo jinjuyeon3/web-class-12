@@ -3,7 +3,7 @@
     padding: 0;
 }
 html{
-    font-size: 20px;
+    font-size: 18px;
 }
 .tab-menu{
     width: 800px;
@@ -47,3 +47,67 @@ html{
     flex: 1;
     opacity: 1;
 }
+
+
+/* ---------------------------- */
+
+.color-tab{
+    margin: 3rem auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.color-tabs{
+    display: flex;
+    gap: 1.2rem;
+}
+.color-tabs>span{
+    /* border: 1px solid  black; */
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(45deg, #6a11cb, #2575fc) border-box;
+}
+.color-tabs>span:hover{
+    color: white;
+    background:
+    linear-gradient(45deg, #6a11cb, #2575fc) padding-box,
+    linear-gradient(45deg, #6a11cb, #2575fc) border-box;
+}
+.color-tabs>span.active{
+    color: white;
+    background:
+    linear-gradient(45deg, #6a11cb, #2575fc) padding-box,
+    linear-gradient(45deg, #6a11cb, #2575fc) border-box;
+}
+.color-chips{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.5rem;
+}
+.color-chips>div{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.color-chips>div.active{
+    display: block;
+}
+.color-chip1{
+    background-color: black;
+}
+.color-chip2{
+    background-color: skyblue;
+}
+.color-chip3{
+    background-color: purple;
+}
+
+
