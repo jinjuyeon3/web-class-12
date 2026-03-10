@@ -22,13 +22,44 @@ html{
     color: #333;
 }
 .modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    left: 0;
+    top: 0;
+    z-index: 2000;
     display: none;
+}
+.modal.on{
+    display: block;
 }
 .popup{
+    position: fixed;
+    width: 300px;
+    padding: 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    z-index: 3000;
     display: none;
 }
+.popup.on{
+    display: block;
+}
+.popup p{
+    margin: 1rem 0;
+}
+.popup-ctl{
+    display: flex;
+    justify-content: flex-end;
+}
+#btn-close{
+    cursor: pointer;
+}
 header{
-    border: 1px solid red;
     width: 1200px;
     height: 100px;
     margin: 0 auto;
@@ -36,18 +67,106 @@ header{
     justify-content: space-between;
     position: relative;
     z-index: 1000;
+    align-items: flex-start;
 }
 .gnb{
     display: flex;
     margin-top: 50px;
+    max-height: 50px;
+    overflow: hidden;
+    transition: all .5s ease 0s;
+}
+.gnb:hover{
+    max-height: 300px;
+}
+/* max-height: 300px 를 주려면 flex container 인 header 에 align-items: flex-start 를 해줘야 함. 이거 안할거면 height를 주면 됨.*/
+.gnb:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height: 0px;
+    background-color: green;
+    z-index: -1;
+    transition: all .5s ease 0s;
+}
+.gnb:hover:after{
+    height: 180px;
 }
 .gnb>li{
-    border: 1px solid green;
 }
 .gnb a{
-    border: 1px solid blue;
     display: flex;
     height: 50px;
     width: 180px;
+    align-items: center;
+    padding: 0 10px;
+}
+.gnb ul{
+    color: #fff;
+}
+.gnb>li:hover>a{
+    background-color: #000;
+    color: #fff;
+}
+.gnb ul>li>a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.station{
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* transition: all .6s ease 0s; */
+}
+.train{
+    display: flex;
+    width: 400%;
+    height: 100%;
+    flex: 1;
+    transition: all 0.6s ease 0s;
+}
+.content{
+    display: flex;
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.content section{
+    flex: 1;
+    padding: 0 10px;
+}
+.content h3{
+    margin-bottom: 30px;
+}
+.notice li{
+    display: flex;
+    justify-content: space-between;
+}
+.gallery{
+    display: flex;
+    gap: 20px;
+}
+.banner{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+}
+.banner a{
+    padding: .4rem 1rem;
+    background-color: #20642b;
+    color: #fff;
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
     align-items: center;
 }

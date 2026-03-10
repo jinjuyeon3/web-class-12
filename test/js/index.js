@@ -1,0 +1,33 @@
+document.addEventListener("DOMContentLoaded",()=>{
+    const popup = document.querySelector(".popup")
+    const modal = document.querySelector(".modal")
+    const btnClose = document.querySelector("#btn-close")
+    const btnPopup = document.querySelector("#btn-popup")
+
+    btnPopup.addEventListener("click",()=>{
+        modal.classList.add("on")
+        popup.classList.add("on")
+    })
+    btnClose.addEventListener("click",()=>{
+        modal.classList.remove("on")
+        popup.classList.remove("on")
+    })
+
+    // 슬라이드
+    const train = document.querySelector(".train")
+    let count = 0
+
+    setInterval(()=>{
+        count++
+        // if(count>2){count=0}
+        train.style.transition = `all 0.7s ease 0s`
+        train.style.transform = `translateX(${-25*count}%)`
+        if(count==3){
+            setTimeout(()=>{
+                train.style.transition = `none`
+                train.style.transform = `translateX(0%)`
+                count = 0
+            },800)
+        }
+    },2500)
+})
