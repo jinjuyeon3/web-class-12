@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+html{
+    background-color: #fff;
+    color: #333;
+}
+
+.popup{
+    position: fixed;
+    width: 300px;
+    padding: 30px;
+    left: 300px;
+    top: 300px;
+    background-color: #fff;
+    z-index: 1000;
+    display: none;
+}
+.popup.on{
+    display: block;
+}
+.popup p{
+    margin: 10px 0;
+}
+.popup-ctl{
+    display: flex;
+    justify-content: flex-end;
+}
+.container{
+    width: 1000px;
+    display: flex;
+}
+header{
+    width: 200px;
+    background-color: rgb(255 21 203);
+}
+.gnb{
+    width: 180px;
+    margin: 0 auto;
+    color: #fff;
+}
+.gnb a{
+    display: flex;
+    width: 180px;
+    height: 50px;
+    align-items: center;
+}
+.gnb ul a{
+    height: 40px;
+    background-color: purple;
+}
+.gnb>li{
+    max-height: 50px;
+    overflow: hidden;
+    transition: all .7s ease 0s;
+}
+.gnb>li:hover{
+    max-height: 300px;
+}
+.gnb li:hover>a{
+    background-color: #000;
+    color: #fff;
+}
+.station{
+    width: 800px;
+    height: 350px;
+    position: relative;
+}
+.train li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+    /* opacity를 0으로 했을 경우 꼭 마우스 반응 없애주기! */
+    transition: all .7s ease 0s;
+}
+.train li.on{
+    opacity: 1;
+    pointer-events: auto;
+}
+.content{
+    display: flex;
+    height: 200px;
+}
+.content section{
+    flex: 1;
+}
+.content section:nth-of-type(1){
+    flex: 1.5;
+}
+/* 실무에선 텍스트가 길어서 공간을 넘어가면 말줄임표를 넣음 */
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+}
+.banner a{
+    padding: .4rem 1rem;
+    background-color: purple;
+    color: #fff;
+}
+.direct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/direct.jpg) no-repeat 50% 50% / cover;
+}
+.direct a{
+    padding: .4rem 1rem;
+    background-color: purple;
+    color: #fff;
+}
+.tabs{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+.tabs span{
+    border: 1px solid purple;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.tabs span.on{
+    background-color: purple;
+    color: #fff;
+}
+.notice li{
+    display: flex;
+    justify-content: space-between;
+}
+.gallery{
+    display: flex;
+    gap: 10px;
+}
+.tab-desc>div{
+    display: none;
+}
+.tab-desc>div.on{
+    display: block;
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    height: 100px;
+    display: flex;
+}
+.fmenu{
+    display: flex;
+    gap: 10px;
+}
