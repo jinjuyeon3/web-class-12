@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    padding-top: 200px;
+    /* background-color: beige; */
+}
+header#scr{
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+header#scr.on{
+    background-color: lightpink;
+}
+#current-count{
+    color: blueviolet;
+    font-weight: bold;
+}
+.rotate-box{
+    border: 1px solid #000;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    /* transform: rotate(35deg); */
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+.box>section{
+    background: url(../img/bg-wave2.png) repeat-x 0% 0%;
+    min-height: 2000px;
+    position: sticky;
+    left: 0;
+    top: 0;
+}
